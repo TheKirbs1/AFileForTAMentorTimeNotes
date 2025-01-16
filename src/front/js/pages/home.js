@@ -1,26 +1,24 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
+import oneOnoneicon from "../../img/oneOnoneicon.png";
+import TAIcon from "../../img/TAIcon.png";
 
 export const Home = () => {
-	const { store, actions } = useContext(Context);
+    const { store, actions } = useContext(Context);
 
-	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!!</h1>
-			<p>
-				<img src={rigoImageUrl} />
-			</p>
-			<div className="alert alert-info">
-				{store.message || "Loading message from the backend (make sure your python backend is running)..."}
-			</div>
-			<p>
-				This boilerplate comes with lots of documentation:{" "}
-				<a href="https://start.4geeksacademy.com/starters/react-flask">
-					Read documentation
-				</a>
-			</p>
-		</div>
-	);
+    return (
+        <ul className="nav nav-pills nav-justified">
+            <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                    <img src={oneOnoneicon} alt="Mentor Tab" style={{ width: "100px", height: "80px" }} />
+                </a>
+            </li>
+            <li className="nav-item">
+			<a className="nav-link" aria-current="page" href="#">
+                    <img src={TAIcon} alt="Teacher Assistant Tab" style={{ width: "100px", height: "80px" }} />
+                </a>
+            </li>
+        </ul>
+    );
 };

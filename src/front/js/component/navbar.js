@@ -1,19 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../styles/navbar.css";
 
 export const Navbar = () => {
-	return (
-		<nav className="navbar navbar-light bg-light">
-			<div className="container">
-				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-				</Link>
-				<div className="ml-auto">
-					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
-					</Link>
-				</div>
-			</div>
-		</nav>
-	);
+  return (
+    <nav className="navbar navbar-secondary bg-secondary">
+      <div className="container d-flex justify-content-center">
+        <Link to="/" id="home-logo">
+          <div className="logo-div text-center">
+            <img
+              src="https://st2.depositphotos.com/1071184/9156/v/450/depositphotos_91564818-stock-illustration-time-stamping-concept.jpg"
+              className="logo-img img-fluid circular-logo"
+              style={{ maxHeight: 160 }}
+              alt="Pet Logo/Home Button"
+            />
+          </div>
+        </Link>
+      </div>
+    </nav>
+  );
 };
