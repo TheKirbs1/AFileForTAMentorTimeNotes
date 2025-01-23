@@ -1,19 +1,4 @@
-.nav-container {
-    background-color: rgb(104, 109, 118);;
-}
-
-.logo-div {
-    display: flex;
-    align-items: center;
-}
-
 .circular-logo {
     border-radius: 50%;
-    object-fit: cover;
-
 }
 
-.logo-img {
-    max-height: 100%;
-    width: auto;
-}
