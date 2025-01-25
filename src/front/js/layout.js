@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
 
+// import MentorHome from "./component/MentorHome";
 import { Home } from "./pages/home";
 import injectContext from "./store/appContext";
 
@@ -24,6 +25,7 @@ const Layout = () => {
                     <Routes>
                         <Route element={<Home />} path="/" />
                         <Route element={<h1>Not found!</h1>} />
+                        {/* <Route element={<MentorHome />} path="/mentor_home" /> */}
                     </Routes>
                 </ScrollToTop>
             </BrowserRouter>

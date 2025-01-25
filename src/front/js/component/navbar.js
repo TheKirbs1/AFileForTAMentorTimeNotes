@@ -20,9 +20,10 @@ export const Navbar = () => {
             </svg>
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Mentor Details</a></li>
-            <li><hr className="dropdown-divider" /></li>
             <li><a className="dropdown-item" href="#">Teacher Assistant Details</a></li>
+            <li><hr className="dropdown-divider" /></li>
+            <li><a className="dropdown-item" href="#">Mentor Details</a></li>
+            
           </ul>
         </div>
 
