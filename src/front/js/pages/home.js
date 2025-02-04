@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
-import mentorBanner from "../../img/mentorBanner.png";
-import TABANNER1 from "../../img/TABANNER1.png";
+import MentorBANNER from "../../img/MentorBANNER.png";
+import TABANNER from "../../img/TABANNER.png";
 import MentorHome from "../component/MentorHome";
 import TeacherAssistantHome from "../component/TeacherAssistantHome";
 
@@ -12,13 +12,21 @@ export const Home = () => {
   return (
     <div>
 
-      {/* Some Dope art work will go here */}
-      <h1>I'm a banner(eventually)</h1>
+      
+      {/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
+      {/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/}
+
+      {/* <h1>I'm a banner(eventually, maybe not.....)</h1> */}
+
+      {/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */}
+      {/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
+
+
 
       {/* <!-- Navtabs --> */}
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center w-100 m-0 p-0">
         <ul className="nav nav-tabs" id="myTab" role="tablist">
-          <li className="nav-item" role="presentation">
+          <li className="nav-item w-50" role="presentation">
             <button
               className="nav-link active"
               id="TA-tab"
@@ -30,13 +38,12 @@ export const Home = () => {
               aria-selected="true"
             >
               <img
-                src={ mentorBanner } 
+                src={ MentorBANNER } 
                 alt="Mentor Tab"
-                // style={{ width: "100px", height: "80px" }}
               />
             </button>
           </li>
-          <li className="nav-item" role="presentation">
+          <li className="nav-item w-50" role="presentation">
             <button
               className="nav-link"
               id="mentorHome-tab"
@@ -48,9 +55,8 @@ export const Home = () => {
               aria-selected="false"
             >
               <img
-                src={ TABANNER1 }
+                src={ TABANNER }
                 alt="Teacher Assistant Tab"
-                // style={{ width: "500px", height: "120px" }}
               />
             </button>
           </li>
